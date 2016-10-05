@@ -1,0 +1,22 @@
+<h2>Case number <%= @case_number %></h2>
+<ol class="Warning">
+  <li>Remember, if you select nothing, it means you are saying <span class ="underline">that</span> abnormality is not present.</li>
+  <li>By unselecting the "abnormal" checkbox, you can unselect all other selections.</li>
+  <li>The abnormal checkbox will automatically check if you select any pattern and the fibrosis checkbox will automatically check if you select Tbx or Hcying.</li>
+</ol>
+
+<div class="col-md-5 col-sm-5 col-xs-12">
+
+    <div class = "ImageHolder">
+        <img src="https://s3.amazonaws.com/lungsoundsbucket/<%= @case_number%>.jpg" />
+    </div>
+</div>
+<div class="col-md-7 col-sm-7 col-xs-12">
+
+   <div class = "FormHolder">
+    <%= render 'form' %>
+   </div>
+
+</div>
+
+
