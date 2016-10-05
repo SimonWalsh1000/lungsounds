@@ -25,6 +25,7 @@ gem 'devise-bootstrap-views'
 gem 'simple_form'
 
 
+
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
   gem 'byebug',      '3.4.0'
